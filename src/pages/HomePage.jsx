@@ -1,18 +1,18 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 import Slider from "../components/slider";
-import d1 from "../assets/d8_files/15095346.png";
-import d2 from "../assets/d8_files/10266152.png";
-import d3 from "../assets/d8_files/4125980.png";
-import d4 from "../assets/d8_files/5498804.png";
-import d5 from "../assets/d8_files/5714975.png";
-import d6 from "../assets/d8_files/8732888.png";
-import d7 from "../assets/d8_files/18675948.png";
-import d8 from "../assets/d8_files/2207024.png";
-import d9 from "../assets/d8_files/2441131.png";
-import d10 from "../assets/d8_files/2779726.png";
-import d11 from "../assets/d8_files/6288095.png";
-import d12 from "../assets/d8_files/5498932.png";
+import d1 from "../assets/floss.png";
+import d2 from "../assets/clinic.png";
+import d3 from "../assets/toothbrush.png";
+import d4 from "../assets/dental-implant.png";
+import d5 from "../assets/floss2.png";
+import d6 from "../assets/medical-report.png";
+import d7 from "../assets/scaling.png";
+import d8 from "../assets/x-ray.png";
+import d9 from "../assets/smile.png";
+import d10 from "../assets/medicine.png";
+import d11 from "../assets/braces.png";
+import d12 from "../assets/tooth.png";
 
 import Testimonial from "../components/Testimonial";
 const HomePage = () => {
@@ -129,41 +129,34 @@ const HomePage = () => {
 
           <div className="py-12 flex flex-col md:flex-row">
             <div
-              className="relative w-full md:w-1/4 pl-5 font-bold space-y-3 py-7 overflow-y-auto"
+              className="w-full md:w-1/4 bg-black pl-5 font-bold space-y-3 py-7 overflow-y-auto"
               style={{
                 backgroundImage:
                   "url('https://images.pexels.com/photos/6529111/pexels-photo-6529111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
+                backgroundRepeat: "no-repeat ",
               }}
             >
-              {/* Black Overlay */}
-              <div className="absolute inset-0 bg-black opacity-55 z-0"></div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                <p className="text-4xl font-bold text-white mb-7">Services</p>
-                <div className="text-white text-xl">
-                  <p className="py-2">Teeth Whitening</p>
-                  <p className="py-2">Dental Implants</p>
-                  <p className="py-2">Orthodontics (Braces and Invisalign)</p>
-                  <p className="py-2">Root Canal Treatment</p>
-                  <p className="py-2">Cosmetic Dentistry</p>
-                  <p className="py-2">Pediatric Dentistry</p>
-                  <p className="py-2">Tooth Extraction</p>
-                  <p className="py-2">Dental Crowns and Bridges</p>
-                  <p className="py-2">Periodontal (Gum) Therapy</p>
-                  <p className="py-2">
-                    Preventive Dental Care (Cleanings and Check-ups)
-                  </p>
-                </div>
+              <p className="text-4xl font-bold text-white mb-7">Services</p>
+              <div className="text-white text-xl">
+                <p className="py-2">Teeth Whitening</p>
+                <p className="py-2">Dental Implants</p>
+                <p className="py-2">Orthodontics (Braces and Invisalign)</p>
+                <p className="py-2">Root Canal Treatment</p>
+                <p className="py-2">Cosmetic Dentistry</p>
+                <p className="py-2">Pediatric Dentistry</p>
+                <p className="py-2">Tooth Extraction</p>
+                <p className="py-2">Dental Crowns and Bridges</p>
+                <p className="py-2">Periodontal (Gum) Therapy</p>
+                <p className="py-2">
+                  Preventive Dental Care (Cleanings and Check-ups)
+                </p>
               </div>
             </div>
-
             {/* Services Section */}
             <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-4 gap-5 ml-3">
               <div className="text-center w-full">
-                <img src={d1} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d1} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Teeth Whitening</p>
                 <p className="justify-start">
                   Brighten your smile with professional whitening treatments
@@ -172,7 +165,7 @@ const HomePage = () => {
               </div>
 
               <div className="text-center w-full">
-                <img src={d2} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d2} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Dental Implants</p>
                 <p className="justify-start">
                   Replace missing teeth with durable, natural-looking implants
@@ -180,7 +173,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d3} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d3} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">
                   Orthodontics (Braces and Invisalign)
                 </p>
@@ -191,7 +184,7 @@ const HomePage = () => {
               </div>
 
               <div className="text-center w-full">
-                <img src={d4} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d4} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Root Canal Treatment</p>
                 <p className="justify-start">
                   Save infected or damaged teeth by removing decay and sealing
@@ -200,7 +193,7 @@ const HomePage = () => {
               </div>
 
               <div className="text-center w-full">
-                <img src={d5} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d5} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Cosmetic Dentistry</p>
                 <p className="justify-start">
                   Enhance your smile with procedures like veneers, bonding, and
@@ -208,7 +201,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d6} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d6} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Pediatric Dentistry</p>
                 <p className="justify-start">
                   Specialized dental care for children, focusing on preventive
@@ -216,7 +209,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d7} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d7} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Tooth Extraction</p>
                 <p className="justify-start">
                   Safely remove damaged or problematic teeth to maintain overall
@@ -224,7 +217,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d8} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d8} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Dental Crowns and Bridges</p>
                 <p className="justify-start">
                   Restore the strength and appearance of damaged teeth or fill
@@ -232,7 +225,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d9} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d9} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Periodontal (Gum) Therapy</p>
                 <p className="justify-start">
                   Treat gum disease with scaling, root planing, and other
@@ -240,7 +233,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d10} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d10} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">
                   Preventive Dental Care (Cleanings and Check-ups)
                 </p>
@@ -250,7 +243,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d11} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d11} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Dental Examination</p>
                 <p className="justify-start">
                   A comprehensive dental check-up to assess oral health,
@@ -259,7 +252,7 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="text-center w-full">
-                <img src={d12} alt="d1" className="h-[80px] mx-auto" />
+                <img src={d12} alt="d1" className="h-[60px] mx-auto" />
                 <p className="uppercase font-bold">Routine Dental Check-Up</p>
                 <p className="justify-start">
                   Regular examinations to maintain oral hygiene, detect early
