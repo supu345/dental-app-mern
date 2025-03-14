@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ServiesPage from "./pages/ServiesPage";
 import BlogPage from "./pages/BlogPage";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<ServiesPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </BrowserRouter>
   );

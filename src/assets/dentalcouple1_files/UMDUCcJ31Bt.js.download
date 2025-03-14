@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("NullStateFiles",["cr:2972"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:2972")}),98);
+__d("maybeSanitizeXYTag",["gkx"],(function(a,b,c,d,e,f,g){"use strict";var h=5,i=95;function a(a){if(!c("gkx")("10779"))return a;var b=Math.min(Math.max(h,a.x),i),d=Math.min(Math.max(h,a.y),i);return babelHelpers["extends"]({},a,{x:b,y:d})}g["default"]=a}),98);

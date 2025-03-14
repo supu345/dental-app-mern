@@ -18,19 +18,23 @@ export const NavbarLinks = [
   },
   {
     name: "About",
-    link: "/",
+    link: "/about",
   },
   {
     name: "Contact",
-    link: "/",
+    link: "/contact",
   },
   {
     name: "Services",
-    link: "/",
+    link: "/services",
   },
   {
     name: "Blog",
-    link: "/",
+    link: "/blog",
+  },
+  {
+    name: "Gallery",
+    link: "/gallery",
   },
 ];
 
@@ -41,19 +45,19 @@ export const NavbarLinksHead = [
   },
   {
     name: "About",
-    link: "/",
+    link: "/about",
   },
   {
     name: "Contact",
-    link: "/",
+    link: "/contact",
   },
   {
     name: "Services",
-    link: "/",
+    link: "/services",
   },
   {
     name: "Blog",
-    link: "/",
+    link: "/blog",
   },
 ];
 
