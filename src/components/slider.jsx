@@ -6,6 +6,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import Banner1 from "../assets/banner.png";
+import Banner2 from "../assets/banner1.png";
+import Banner3 from "../assets/banner2.png";
+import Banner4 from "../assets/banner4.png";
 const Slider = () => {
   return (
     <div>
@@ -42,7 +45,7 @@ const Slider = () => {
           <SwiperSlide>
             <div className="relative h-full w-full flex flex-col  items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img
-                src={Banner1}
+                src={Banner2}
                 alt="Nature 1"
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
               />
@@ -63,7 +66,7 @@ const Slider = () => {
           <SwiperSlide>
             <div className="relative h-full w-full flex flex-col  items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img
-                src={Banner1}
+                src={Banner3}
                 alt="Nature 1"
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
               />
@@ -83,7 +86,7 @@ const Slider = () => {
           <SwiperSlide>
             <div className="relative h-full w-full flex flex-col  items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img
-                src={Banner1}
+                src={Banner4}
                 alt="Nature 1"
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
               />

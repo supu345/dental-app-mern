@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="py-6 px-6 dark:bg-black dark:text-white">
@@ -30,7 +31,10 @@ const Footer = () => {
             Follow Us
           </p>
           <div className="flex flex-row gap-5 ml-[200px] md:ml-[120px] pt-7">
-            <FaFacebookF className="bg-blue-800 text-white p-1 text-3xl" />
+            <Link to="https://www.facebook.com/profile.php?id=61560829131740">
+              <FaFacebookF className="bg-blue-800 text-white p-1 text-3xl" />
+            </Link>
+
             <IoCall className="bg-blue-800 text-white p-1 text-3xl" />
           </div>
         </div>
