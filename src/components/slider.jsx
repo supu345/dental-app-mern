@@ -5,14 +5,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
-import Banner1 from "../assets/banner.png";
+import Banner1 from "../assets/banner-dental.jpg";
 import Banner2 from "../assets/banner1.png";
 import Banner3 from "../assets/banner2.png";
 import Banner4 from "../assets/banner4.png";
 const Slider = () => {
   return (
     <div>
-      <div className="w-full h-screen bg-gray-100 flex items-center justify-center">
+      <div className="w-full h-screen  bg-gray-100 flex items-center justify-center">
         <Swiper
           spaceBetween={30}
           effect={"fade"}
@@ -22,14 +22,14 @@ const Slider = () => {
           modules={[EffectFade, Navigation, Pagination, Autoplay]}
           className="w-full h-[550px]  overflow-hidden shadow-lg"
         >
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="relative h-full w-full flex flex-col items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img
                 src={Banner1}
                 alt="Nature 1"
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
               />
-              {/* <div className="relative z-10 text-white">
+             <div className="relative z-10 text-white">
                 <h2 className="text-5xl font-bold mb-4">
                   Discover the Best Deals!
                 </h2>
@@ -39,9 +39,9 @@ const Slider = () => {
                 <button className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-blue-600">
                   Shop Now
                 </button>
-              </div> */}
+              </div> 
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide>
             <div className="relative h-full w-full flex flex-col  items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img

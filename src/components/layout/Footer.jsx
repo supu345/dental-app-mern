@@ -1,44 +1,206 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
 import { Link } from "react-router-dom";
-const Footer = () => {
-  return (
-    <div className="py-6 px-6 dark:bg-black dark:text-white">
-      <div className="flex flex-col md:flex-row pt-9 gap-6">
-        <div className=" w-full md:w-1/4">
-          <p className="text-4xl font-extrabold text-center text-slate-600 dark:bg-black dark:text-white">
-            Phone
-          </p>
-          <p className="text-center mt-7">01999 44 1515 , 01999 55 1616</p>
-        </div>
-        <div className=" w-full md:w-1/4">
-          <p className="text-4xl font-extrabold text-center text-slate-600 dark:bg-black dark:text-white">
-            Address
-          </p>
-          <p className="text-center mt-7">
-            Havely Complex, ka-6, Bashundhara Main Road,, Dhaka, Bangladesh
-          </p>
-        </div>
-        <div className=" w-full md:w-1/4">
-          <p className="text-4xl font-extrabold text-center text-slate-600 dark:bg-black dark:text-white">
-            Email
-          </p>
-          <p className="text-center pt-7">example@gmail.com</p>
-        </div>
-        <div className=" w-full md:w-1/4">
-          <p className="text-4xl font-extrabold text-center text-slate-600 dark:bg-black dark:text-white">
-            Follow Us
-          </p>
-          <div className="flex flex-row gap-5 ml-[200px] md:ml-[120px] pt-7">
-            <Link to="https://www.facebook.com/profile.php?id=61560829131740">
-              <FaFacebookF className="bg-blue-800 text-white p-1 text-3xl" />
-            </Link>
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaArrowUp,
+  FaWhatsapp,
+  FaPhone,
+} from "react-icons/fa";
+import { FaHospitalUser } from "react-icons/fa6";
 
-            <IoCall className="bg-blue-800 text-white p-1 text-3xl" />
+import { motion } from "framer-motion";
+import { SlideUp } from "../../utility/animation";
+import { SiAdafruit } from "react-icons/si";
+import logo from "../../assets/logo-1.png";
+import LogoText from "../../assets/dental-couple-text1.png";
+const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const scrollTop = () => {
+    const scrollStep = -window.scrollY / 50;
+    const delay = 10;
+
+    const scrollInterval = setInterval(() => {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, delay);
+  };
+
+  return (
+    <div className="bg-gradient-to-r from-blue-500/50 to-green-500/50 overflow-hidden ">
+      <motion.div
+        variants={SlideUp(0.5)}
+        initial="hidden"
+        whileInView={"visible"}
+        className="px-6 py-5  mb-6"
+      >
+        <div className="py-7 flex flex-col md:flex-row lg:flex-row gap-7 text-black">
+          {/* Column 1 */}
+          <div className="w-full md:w-2/6  text-justify">
+            {/* Logo section */}
+            <div className="flex items-center gap-4 font-bold text-2xl">
+              <Link to={"/"} onClick={() => window.scrollTo(0, 0)}>
+                <div className="flex flex-row gap-2 items-center  bg-white/30 rounded-md p-2 mb-4 ">
+                  <img
+                    src={logo}
+                    alt="logo"
+                    className="h-10 w-10 dark:bg-white"
+                  />
+                  <img
+                    src={LogoText}
+                    alt="logo"
+                    className="h-20 w-50 dark:bg-white"
+                  />
+                  {/* <p className="capitalize text-2xl">Dental Couple</p> */}
+                </div>
+              </Link>
+            </div>
+            {/* <div className="flex flex-row gap-2 items-center mb-4">
+              <SiAdafruit className="text-2xl text-teal-300" />
+              <h1 className="font-bold text-2xl ">Suparna</h1>
+            </div> */}
+            <p className="text-black">
+              Experience personalized care from our expert team—combining
+              advanced technology and compassion to support your wellness
+              journey every step of the way.
+            </p>
+            <div className="flex justify-center md:justify-start items-center h-[50px] text-black">
+              <div className="flex gap-4">
+                {/* <Link
+                  to="https://web.whatsapp.com/send?phone=+wa.me/8801730702545"
+                  target="_blank"
+                  rel="noopener nofollow"
+                  data-url="https://web.whatsapp.com/send?phone=wa.me/8801730702545"
+                  data-tab-setting="hover"
+                  data-mobile-behavior="disable"
+                  data-flyout="disable"
+                  title="WhatsApp"
+                  onClick={scrollToTop}
+                >
+                  {" "}
+                  <FaWhatsapp className="hover:text-blue-700 text-2xl" />
+                </Link> */}
+                <Link
+                  to="https://www.facebook.com/profile.php?id=61560829131740"
+                  target="_blank"
+                  onClick={scrollToTop}
+                >
+                  <FaFacebookF className="text-blue-700 hover:text-blue-900 bg-white p-1  text-2xl" />
+                </Link>
+
+                {/* <Link to="/" onClick={scrollToTop}>
+                  <FaInstagram className="hover:text-red-700  text-2xl" />
+                </Link> */}
+              </div>
+            </div>
+          </div>
+
+          {/* Column 2 */}
+          <div className="w-full md:w-1/6 text-center text-black">
+            <p className="text-lg font-bold mb-2 ">Links</p>
+            <ul className="flex flex-col gap-2">
+              <li>
+                <Link to="/" onClick={scrollToTop}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" onClick={scrollToTop}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" onClick={scrollToTop}>
+                  Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3 */}
+          <div className="w-full md:w-1/6 text-center text-black">
+            <p className="text-lg font-bold mb-2">More Links</p>
+            <ul className="flex flex-col gap-2">
+              <li>
+                <Link to="/blog" onClick={scrollToTop}>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery" onClick={scrollToTop}>
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={scrollToTop}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4 */}
+          <div className="w-full md:w-2/6 text-center text-black">
+            <p className="text-lg font-bold mb-4">Contact Information</p>
+            <ul className="flex flex-col gap-5">
+              {/* Phone Numbers */}
+              <li>
+                <Link to="/blog" onClick={scrollToTop}>
+                  <div className="flex flex-row items-center gap-3 ">
+                    <FaPhone className="text-xl" />
+                    <p>01999 44 1515, 01999 55 1616</p>
+                  </div>
+                </Link>
+              </li>
+
+              {/* Address */}
+              <li>
+                <Link to="/gallery" onClick={scrollToTop}>
+                  <div className="flex flex-row items-start gap-3 justify-center text-left">
+                    <FaHospitalUser className="text-5xl " />
+                    <p>
+                      Havely Complex (1st Floor Behind Walton Showroom), Ka-6,
+                      Bashundhara Main Road, Dhaka-1229, Bangladesh
+                    </p>
+                  </div>
+                </Link>
+              </li>
+
+              {/* Optional Email Section (Uncomment if needed) */}
+              {/* 
+    <li>
+      <Link to="/contact" onClick={scrollToTop}>
+        <div className="flex flex-row items-center gap-3 justify-center">
+          <FaEnvelope className="text-xl" />
+          <p>info@dentalcouple.com</p>
+        </div>
+      </Link>
+    </li>
+    */}
+            </ul>
           </div>
         </div>
-      </div>
+
+        {/* <div
+          onClick={scrollTop}
+          id="scroll"
+          className="fixed bottom-4 right-4 cursor-pointer"
+        >
+          <button className="bg-teal-300 p-3 rounded-full shadow-md">
+            <FaArrowUp className="text-black" />
+          </button>
+        </div> */}
+        {/* <div className="border border-gray-500/20"></div>
+        <div className="text-center text-black pt-7">
+          <p>© 2025 Foyzun Nahar Suparna | All rights reserved.</p>
+        </div> */}
+      </motion.div>
     </div>
   );
 };

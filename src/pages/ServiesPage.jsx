@@ -1,5 +1,18 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
+import Fahim from "../assets/fahim.jpg";
+import Suparna from "../assets/Foyzun.png";
+import Adilah from "../assets/nidhi.jpeg";
+import { TbDental, TbDentalBroken } from "react-icons/tb";
+import { FaTeeth, FaTooth } from "react-icons/fa";
+import { LiaTeethOpenSolid } from "react-icons/lia";
+import { MdOutlineMedicationLiquid } from "react-icons/md";
+import { motion } from "framer-motion";
+import { SlideUp } from "../utility/animation";
+import Tesstimonials from "../components/Tesstimonials";
+import doctor from "../assets/doctor.png";
+import doctor1 from "../assets/shamima3.png";
+import { BsStars } from "react-icons/bs";
 const Services = () => {
   return (
     <div>
@@ -17,21 +30,105 @@ const Services = () => {
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
             {/* Content */}
-            <div className="relative flex flex-col items-center ">
+            <div className="relative flex flex-col items-center text-center px-4">
               <p className="text-center text-white text-7xl font-bold">
                 Services we offer
               </p>
-              <h1 className="text-xl pt-3 text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore <br />
-                molestias aliquid ullam ea doloremque officiis nobis quia
-                officia cum eum
-              </h1>
+              <p className="text-xl pt-3 text-white w-full md:w-[800px]">
+                Modern Dentistry Machineries and Equipment, Modern Clinical
+                practices dedicated for your dental health, Professional and
+                Experienced Doctors and their team, Reasonable price and high
+                quality service.
+                <br />
+              </p>
               <div className="w-12 h-1 bg-white mt-2 mb-6"></div>
             </div>
           </div>
+          <motion.div
+            variants={SlideUp(0.5)}
+            initial="hidden"
+            whileInView={"visible"}
+            className="py-[100px] px-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8"
+          >
+            {" "}
+            {/*1 */}
+            <div className=" bg-teal-100 p-8 rounded-2xl">
+              <LiaTeethOpenSolid className="text-6xl text-teal-700" />
+              <p className="py-6 text-3xl font-bold text-gray-600">
+                Complete Dental & Medical Care
+              </p>
+              <p className="md:w-[480px]">
+                We offer complete dental and medical services in one
+                place—combining expert care, modern technology, and a
+                patient-first approach to ensure your total health, comfort, and
+                long-term wellness.
+              </p>
+            </div>
+            {/*2 */}
+            <div className=" bg-teal-100 p-8 rounded-2xl">
+              <FaTooth className="text-6xl text-teal-700" />
+              <p className="py-6 text-3xl font-bold text-gray-600">
+                Healthy Smiles & Healthy Lives
+              </p>
+              <p className="md:w-[480px]">
+                We believe a healthy smile is the foundation of a healthy life.
+                Our dedicated team provides compassionate, comprehensive care to
+                support your overall well-being—one smile at a time.
+              </p>
+            </div>
+            {/*3 */}
+            <div className=" bg-teal-100 p-8 rounded-2xl">
+              <MdOutlineMedicationLiquid className="text-6xl text-teal-700" />
+              <p className="py-6 text-3xl font-bold text-gray-600">
+                Advanced Healthcare Solutions
+              </p>
+              <p className="md:w-[480px]">
+                Delivering cutting-edge healthcare with modern technology,
+                expert professionals, and personalized treatment plans—designed
+                to meet your unique needs and ensure the highest standards of
+                care for every patient.
+              </p>
+            </div>
+            {/*4 */}
+            <div className=" bg-teal-100 p-8 rounded-2xl">
+              <LiaTeethOpenSolid className="text-6xl text-teal-700" />
+              <p className="py-6 text-3xl font-bold text-gray-600">
+                Compassionate Care, Trusted Experts
+              </p>
+              <p className="md:w-[480px]">
+                Our dedicated team combines expertise with empathy to provide
+                personalized dental and medical care, ensuring each patient
+                feels valued, comfortable, and confident in their health
+                journey.
+              </p>
+            </div>
+            {/*5 */}
+            <div className=" bg-teal-100 p-8 rounded-2xl">
+              <FaTeeth className="text-6xl text-teal-700" />
+              <p className="py-6 text-3xl font-bold text-gray-600">
+                Innovative Treatments, Lasting Results
+              </p>
+              <p className="md:w-[480px]">
+                Using the latest technology and proven methods, we deliver
+                effective dental and medical solutions that improve your health,
+                restore your smile, and enhance your quality of life.
+              </p>
+            </div>
+            {/*6 */}
+            <div className=" bg-teal-100 p-8 rounded-2xl">
+              <TbDentalBroken className="text-6xl text-teal-700" />
+              <p className="py-6 text-3xl font-bold text-gray-600">
+                Your Health, Our Priority
+              </p>
+              <p className="md:w-[480px]">
+                Committed to holistic wellness, we offer comprehensive care
+                plans that address both dental and medical needs, helping you
+                achieve optimal health with convenience and compassion.
+              </p>
+            </div>
+          </motion.div>
           {/* services */}
-          <div className="mt-9 container mx-auto">
+          {/* <div className="mt-9 container mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
               <div>
                 <img
@@ -40,13 +137,12 @@ const Services = () => {
                   className="h-[350px] w-full object-cover"
                 />
                 <p className="text-2xl py-6 text-center font-bold uppercase font-bebas">
-                  Servers
+                  General Dentistry
                 </p>
                 <p className="py-3 text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis, consequatur? Laboriosam ex odio iure odit adipisci
-                  aperiam officia at aspernatur? Laboriosam ex odio iure odit
-                  adipisci aperiam officia
+                  • Scaling and Polishing • Light Cure Filing (Composite) • Root
+                  canal Treatment • Single Visit Root canal Treatment •
+                  Extraction • Inlays and onlays • Surgical Removal of Teeth
                 </p>
               </div>
               <div>
@@ -56,13 +152,11 @@ const Services = () => {
                   className="h-[350px] w-full object-cover"
                 />
                 <p className="text-2xl py-6 text-center font-bold uppercase font-bebas">
-                  Teeth Whitening
+                  Prosthetic Dentistry
                 </p>
                 <p className="py-3 text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis, consequatur? Laboriosam ex odio iure odit adipisci
-                  aperiam officia at aspernatur? Laboriosam ex odio iure odit
-                  adipisci aperiam officia
+                  • Crown and bridges • Fiber post • Dental Implant • Complete
+                  and Partial Denture • Zirconia Crown
                 </p>
               </div>
               <div>
@@ -72,13 +166,11 @@ const Services = () => {
                   className="h-[350px] w-full object-cover"
                 />
                 <p className="text-2xl py-6 text-center font-bold uppercase font-bebas">
-                  Dental Implants
+                  Pediatric Dentistry
                 </p>
                 <p className="py-3 text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis, consequatur? Laboriosam ex odio iure odit adipisci
-                  aperiam officia at aspernatur? Laboriosam ex odio iure odit
-                  adipisci aperiam officia
+                  • Light Cure Filing (Composite) • Flouride treatment •
+                  Pulpotomy and pulpectomy • Extraction • Space Maintainer
                 </p>
               </div>
               <div>
@@ -88,13 +180,11 @@ const Services = () => {
                   className="h-[350px] w-full object-cover"
                 />
                 <p className="text-2xl py-6 text-center font-bold uppercase font-bebas">
-                  Orthodontics (Braces and Invisalign)
+                  Cosmetic Dentistry
                 </p>
                 <p className="py-3 text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis, consequatur? Laboriosam ex odio iure odit adipisci
-                  aperiam officia at aspernatur? Laboriosam ex odio iure odit
-                  adipisci aperiam officia
+                  • Veneers (Hollywood smile) • Smile design • E-max Crowns •
+                  Tooth Whitening
                 </p>
               </div>
               <div>
@@ -104,13 +194,11 @@ const Services = () => {
                   className="h-[350px] w-full object-cover"
                 />
                 <p className="text-2xl py-6 text-center font-bold uppercase font-bebas">
-                  Root Canal Treatment
+                  Orthodontic Dentistry
                 </p>
                 <p className="py-3 text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis, consequatur? Laboriosam ex odio iure odit adipisci
-                  aperiam officia at aspernatur? Laboriosam ex odio iure odit
-                  adipisci aperiam officia
+                  • Fixed Orthodontic treatment (Braces) • Removable Orthodontic
+                  treatment • Retainers after braces • Clear aligners
                 </p>
               </div>
               <div>
@@ -120,99 +208,48 @@ const Services = () => {
                   className="h-[350px] w-full object-cover"
                 />
                 <p className="text-2xl py-6 text-center font-bold uppercase font-bebas">
-                  Cosmetic Dentistry
+                  Biological Dentistry
                 </p>
                 <p className="py-3 text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis, consequatur? Laboriosam ex odio iure odit adipisci
-                  aperiam officia at aspernatur? Laboriosam ex odio iure odit
-                  adipisci aperiam officia
+                  • Safe Removal of Amalgam filling (SMART) • Note: All our
+                  Materials Bio-compatible Materials.
                 </p>
               </div>
             </div>
-          </div>
-          {/* TERMS */}
+          </div> */}
+          {/* Radiology & Sterilization */}
 
-          <div className="container ">
-            <p className="text-3xl font-bold">TERMS</p>
+          {/* <div className="container ">
+            <p className="text-3xl font-bold">Radiology & Sterilization</p>
+            <p className="py-1">• Periapical X-ray • Cephalometric X-ray</p>
+            <p className="py-1">• Orthopantomogram (OPG X-ray) • RVG X-ray</p>
             <p className="py-1">
-              1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Officiis
+              • Autoclave, Chemical, UV Light Box are used for Sterilization
             </p>
-            <p className="py-1">
-              2. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Officiis.consectetur adipisicing elit. Officiis
-            </p>
-            <p className="py-1">
-              3. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Officiis.consectetur adipisicing elit. Officiis
-            </p>
-          </div>
-          {/* Reviews */}
-          <div className="container ">
-            <p className="text-3xl font-bold uppercase mt-7">Reviews</p>
-            <p className="text-center text-black dark:text-white dark:bg-black text-5xl font-bold">
-              Testimonials
-            </p>
-            <h1 className="text-xl pt-3 text-center text-black dark:text-white dark:bg-black pb-5">
-              What Our Clients Say
-            </h1>
-            <div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-amber-500 gap-6 py-7 px-4 md:px-9 pt-9 w-full dark:text-white dark:bg-black"
-              style={{
-                backgroundImage:
-                  "url('https://images.pexels.com/photos/4269365/pexels-photo-4269365.jpeg?auto=compress&cs=tinysrgb&w=600')",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              {/* Testimonial Card */}
-              <div className="flex flex-col items-center mt-2 mb-9 py-6 bg-white  dark:bg-black h-auto text-center shadow-lg rounded-lg">
-                <img
-                  src="https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="John Doe"
-                  className="h-[80px] w-[80px] mx-auto rounded-full"
-                />
-                <p className="font-bold text-lg md:text-xl mt-4">John Doe</p>
-                <p className="py-4 px-4 text-sm md:text-base dark:text-white dark:bg-black">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                  quae aliquid molestiae sed illo aut earum alias aspernatur
-                  iusto! Eveniet.
-                </p>
-              </div>
+          </div> */}
 
-              {/* Testimonial Card */}
-              <div className="flex flex-col items-center mt-2 mb-9 py-6 bg-white  dark:bg-black h-auto text-center shadow-lg rounded-lg">
-                <img
-                  src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Fahim Rashid"
-                  className="h-[80px] w-[80px] mx-auto rounded-full"
-                />
-                <p className="font-bold text-lg md:text-xl mt-4">
-                  Fahim Rashid
-                </p>
-                <p className="py-4 px-4 text-sm md:text-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                  quae aliquid molestiae sed illo aut earum alias aspernatur
-                  iusto! Eveniet.
-                </p>
-              </div>
-
-              {/* Testimonial Card */}
-              <div className="flex flex-col items-center mt-2 mb-9 py-6 bg-white  dark:bg-black h-auto text-center shadow-lg rounded-lg">
-                <img
-                  src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Jane Smith"
-                  className="h-[80px] w-[80px] mx-auto rounded-full"
-                />
-                <p className="font-bold text-lg md:text-xl mt-4">Jane Smith</p>
-                <p className="py-4 px-4 text-sm md:text-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                  quae aliquid molestiae sed illo aut earum alias aspernatur
-                  iusto! Eveniet.
-                </p>
-              </div>
+          {/* Testimonial */}
+          <Tesstimonials />
+        </div>
+        {/*doctor */}
+        <div className="flex flex-col md:flex-row">
+          <div className="text-black bg-teal-900">
+            {" "}
+            <div className="flex flex-row gap-2 item-center  text-white px-7 py-9">
+              <BsStars className="" />
+              <p className="uppercase font-bold">About Us</p>
+              <TbDental className="mt-1 font-bold" />
             </div>
+            <p className="text-5xl text-white px-9">
+              Become a Member of the Club and Start Riding
+            </p>
+          </div>
+          <div className="bg-teal-900 w-full">
+            <img
+              src={doctor1}
+              alt="photo"
+              className="md:-mt-[50px] md:ml-[300px]"
+            />
           </div>
         </div>
       </Layout>

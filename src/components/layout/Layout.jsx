@@ -30,7 +30,7 @@ const Layout = (props) => {
         id="scroll"
         className="fixed bottom-4 right-4 cursor-pointer"
       >
-        <button className="bg-yellow-300 p-3 rounded-full shadow-md">
+        <button className="bg-teal-300 p-3 rounded-full shadow-md">
           <span>
             <FaArrowUp />
           </span>

@@ -40,14 +40,15 @@ const Testimonial = () => {
                 <div className="flex flex-col items-center mt-2 mb-9 py-6 bg-white h-auto text-center shadow-lg rounded-lg">
                   <img
                     src="https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="John Doe"
+                    alt="Adilah Tanzim"
                     className="h-[80px] w-[80px] mx-auto rounded-full"
                   />
-                  <p className="font-bold text-lg md:text-xl mt-4">John Doe</p>
+                  <p className="font-bold text-lg md:text-xl mt-4">
+                    Adilah Tanzim
+                  </p>
                   <p className="py-4 px-4 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Neque quae aliquid molestiae sed illo aut earum alias
-                    aspernatur iusto! Eveniet.
+                    Exceptional dental care! The staff was friendly, and my
+                    smile looks better than ever. Highly recommend!
                   </p>
                 </div>
 
@@ -62,9 +63,9 @@ const Testimonial = () => {
                     Fahim Rashid
                   </p>
                   <p className="py-4 px-4 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Neque quae aliquid molestiae sed illo aut earum alias
-                    aspernatur iusto! Eveniet.
+                    Pain-free procedure with excellent results. The dentist
+                    explained everything clearly. A truly wonderful dental
+                    experience!
                   </p>
                 </div>
 
@@ -76,12 +77,12 @@ const Testimonial = () => {
                     className="h-[80px] w-[80px] mx-auto rounded-full"
                   />
                   <p className="font-bold text-lg md:text-xl mt-4">
-                    Jane Smith
+                    Foyzun Nahar
                   </p>
                   <p className="py-4 px-4 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Neque quae aliquid molestiae sed illo aut earum alias
-                    aspernatur iusto! Eveniet.
+                    State-of-the-art equipment and professional staff made my
+                    treatment comfortable. My teeth feel amazing now. Great
+                    service!
                   </p>
                 </div>
               </div>

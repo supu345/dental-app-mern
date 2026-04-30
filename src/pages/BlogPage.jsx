@@ -34,9 +34,7 @@ const Blog = () => {
                 whileInView={"visible"}
               >
                 <p className="text-center max-w-md">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore molestias aliquid ullam ea doloremque officiis nobis
-                  quia officia cum eum?
+                  From Clinic to Kitchen: Real Life with the Dental Couple
                 </p>
               </motion.p>
             </div>
@@ -79,7 +77,7 @@ const Blog = () => {
 
           <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6 mt-[70px]">
             {/* Image Section */}
-            <div className="w-[400px] md:w-[400px] ">
+            <div className="w-full md:w-[400px] ">
               <motion.img
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -114,7 +112,7 @@ const Blog = () => {
 
           <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6 mt-[70px]">
             {/* Image Section */}
-            <div className="w-[400px] md:w-[400px] ">
+            <div className="w-full md:w-[400px] ">
               <motion.img
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
