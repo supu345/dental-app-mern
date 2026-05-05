@@ -17,7 +17,7 @@ import { SlideLeft } from "../utility/animation";
 import { SlideRight } from "../utility/animation";
 const Service = () => {
   return (
-    <div className="py-9 mt-[100px] px-7 bg-gradient-to-r from-green-100 via-teal-100 to-blue-100">
+    <div className="py-9 mt-[100px] mb-9 px-7 bg-blue-200 via-teal-100 to-blue-100">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ const Service = () => {
         {/* Tagline */}
         <div className="mt-4">
           <p className="text-4xl font-semibold">
-            Exceptional Dental & Medical <br />
+            Exceptional Dental  <br />
             Services, Together for You
           </p>
         </div>
@@ -62,7 +62,7 @@ const Service = () => {
             alt="dentalimplant"
             className="h-[100px] w-[100px] bg-gradient-to-r from-green-100 via-teal-100 to-blue-100 p-4 rounded-full transition-transform duration-300 hover:scale-110"
           />
-          <p className="py-4 font-bold text-xl">Prosthetic Dentistry</p>
+          <p className="py-4 font-bold text-xl">Laser Dentistry</p>
         </div>
         <div className="bg-white text-center flex flex-col items-center py-7 rounded-md  hover:shadow-[0_0_20px_rgba(5,18,41,0.2)] transition-shadow duration-300">
           <img
@@ -70,7 +70,7 @@ const Service = () => {
             alt="image1"
             className="h-[100px] w-[100px] bg-gradient-to-r from-green-100 via-teal-100 to-blue-100 p-4 rounded-full transition-transform duration-300 hover:scale-110"
           />
-          <p className="py-4 font-bold text-xl">Teeth Whitening</p>
+          <p className="py-4 font-bold text-xl">Root Canal Treatment</p>
         </div>
         <div className="bg-white text-center flex flex-col items-center py-7 rounded-md  hover:shadow-[0_0_20px_rgba(5,18,41,0.2)] transition-shadow duration-300">
           <img
@@ -78,7 +78,8 @@ const Service = () => {
             alt="dentalimplant1"
             className="h-[100px] w-[100px] bg-gradient-to-r from-green-100 via-teal-100 to-blue-100 p-4 rounded-full transition-transform duration-300 hover:scale-110"
           />
-          <p className="py-4 font-bold text-xl">Orthodontics </p>
+          <p className="py-4 font-bold text-xl">Dental
+Crowns and Bridges </p>
         </div>
         <div className="bg-white text-center flex flex-col items-center py-7 rounded-md  hover:shadow-[0_0_20px_rgba(5,18,41,0.2)] transition-shadow duration-300">
           <img
@@ -86,7 +87,8 @@ const Service = () => {
             alt="rootcanal"
             className="h-[100px] w-[100px] bg-gradient-to-r from-green-100 via-teal-100 to-blue-100 p-4 rounded-full transition-transform duration-300 hover:scale-110"
           />
-          <p className="py-4 font-bold text-xl">Root Canal Treatment</p>
+          <p className="py-4 font-bold text-xl">Orthodontics
+(Braces and Invisalign)</p>
         </div>
         <div className="bg-white text-center flex flex-col items-center py-7 rounded-md  hover:shadow-[0_0_20px_rgba(5,18,41,0.2)] transition-shadow duration-300">
           <img
@@ -94,7 +96,7 @@ const Service = () => {
             alt="toothextraction"
             className="h-[100px] w-[100px] bg-gradient-to-r from-green-100 via-teal-100 to-blue-100 p-4 rounded-full transition-transform duration-300 hover:scale-110"
           />
-          <p className="py-4 font-bold text-xl">Tooth Extraction</p>
+          <p className="py-4 font-bold text-xl">cosmetic dentistry</p>
         </div>
         <div className="bg-white text-center flex flex-col items-center py-7 rounded-md  hover:shadow-[0_0_20px_rgba(5,18,41,0.2)] transition-shadow duration-300">
           <img
@@ -103,8 +105,7 @@ const Service = () => {
             className="h-[100px] w-[100px] bg-gradient-to-r from-green-100 via-teal-100 to-blue-100 p-4 rounded-full transition-transform duration-300 hover:scale-110"
           />
           <p className="py-4 font-bold text-xl">
-            Dental <br />
-            Crowns and Bridges
+            dental implants
           </p>
         </div>
         <div className="bg-white text-center flex flex-col items-center py-7 rounded-md  hover:shadow-[0_0_20px_rgba(5,18,41,0.2)] transition-shadow duration-300">
@@ -114,8 +115,7 @@ const Service = () => {
             className="h-[100px] w-[100px] bg-gradient-to-r from-green-100 via-teal-100 to-blue-100 p-4 rounded-full transition-transform duration-300 hover:scale-110"
           />
           <p className="py-4 font-bold text-xl">
-            Orthodontics <br />
-            (Braces and Invisalign)
+           Radiology
           </p>
         </div>
       </motion.div>

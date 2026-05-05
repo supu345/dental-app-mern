@@ -4,6 +4,7 @@ import Banner2 from "../assets/banner1.png";
 import Banner3 from "../assets/banner2.png";
 import Banner4 from "../assets/banner4.png";
 import Banner8 from "../assets/laser1.jpg";
+import Banner9 from "../assets/pt2.jpeg";
 const Hero = () => {
   const slides = [
     // {
@@ -68,6 +69,16 @@ const Hero = () => {
       description:
         "Find out how to ensure your child’s teeth grow healthy and strong with age-appropriate dental care, tips for preventing cavities, and advice on their first dental visit.",
     },
+     {
+      id: 9,
+
+      image: Banner9,
+      title: "Pediatric Dentistry: Caring for Your Child’s Smile",
+      description:
+        "Find out how to ensure your child’s teeth grow healthy and strong with age-appropriate dental care, tips for preventing cavities, and advice on their first dental visit.",
+    },
+    
+    
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -95,7 +106,7 @@ const Hero = () => {
   return (
     <div className="relative max-w-7xl w-full mx-auto group">
       {/* Slider */}
-      <div className="relative h-[600px] overflow-hidden">
+      <div className="relative h-[800px] overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={slide.id}

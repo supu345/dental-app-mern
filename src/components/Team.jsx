@@ -13,7 +13,7 @@ import Shamima1 from "../assets/DSC09852-removebg-preview (1).png";
 import { FaFacebookF } from "react-icons/fa";
 const Team = () => {
   return (
-    <div className="mt-[100px] px-5">
+    <div className="mt-[200px] px-5">
       {/* text part */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
@@ -34,79 +34,106 @@ const Team = () => {
         </p>
       </motion.div>
       {/* 4 div */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 px-7 mt-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 px-2 mt-8 ">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           className="flex flex-col items-center text-center"
         >
-          <div className="justify-center flex  flex-col md:flex-row gap-4  bg-gradient-to-r from-green-100 via-teal-100 to-blue-100">
-            <div className="md:w-1/2 relative group">
-              <img
-                src={Shamima4}
-                alt="Shamima"
-                className="w-full h-[380px]  md:h-[320px] object-cover bg-gray-300 rounded-md"
-              />
-              <div className="absolute inset-0 bg-teal-400/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="text-center">
-                  <p className="text-white text-lg md:text-2xl font-bold">
-                    Dr. Shamima Alam
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="justify-center flex flex-col md:flex-row gap-4 bg-gradient-to-r from-green-100 via-teal-100 to-blue-100">
+  
+  <div className="md:w-1/2 relative group">
+    <img
+      src={Shamima4}
+      alt="Shamima"
+      className="w-full h-[380px] md:h-[380px] object-cover bg-gray-300 rounded-md"
+    />
+    <div className="absolute inset-0 bg-teal-400/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="text-center">
+        <p className="text-white text-lg md:text-2xl font-bold">
+          Dr. Shamima Alam
+        </p>
+      </div>
+    </div>
+  </div>
 
-            <div className="md:w-1/2 flex items-center justify-center text-start px-4">
-              <div>
-                <p className="text-lg font-bold text-[#1f2d3d] py-5">
-                  Dr. Shamima Alam
-                </p>
-                <p>
-                  Experienced Dental Surgeon specializing in oral surgery,
-                  cosmetic, and restorative dentistry with 16+ years' expertise
-                  and advanced laser training.
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex flex-col items-center text-center"
-        >
-          <div className="justify-center flex  flex-col md:flex-row gap-4  bg-gradient-to-r from-green-100 via-teal-100 to-blue-100">
-            <div className="md:w-1/2 relative group">
-              <img
-                src={Mahim}
-                alt="Mahim"
-                className="w-full h-[380px]  md:h-[320px] object-cover bg-gray-300 rounded-md"
-              />
-              <div className="absolute inset-0 bg-teal-400/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="text-center">
-                  <p className="text-white text-lg md:text-2xl font-bold">
-                    Dr. Mahin Sarwar
-                  </p>
-                </div>
-              </div>
-            </div>
+  <div className="md:w-1/2 flex items-center justify-center text-start px-4">
+    <div>
+      <p className="text-lg font-bold text-[#1f2d3d] py-3">
+        Dr. Shamima Alam
+      </p>
 
-            <div className="md:w-1/2 flex items-center justify-center text-start px-4">
-              <div>
-                <p className="text-lg font-bold text-[#1f2d3d] py-5">
-                  Dr. Mahin Sarwar
-                </p>
-                <p>
-                  Experienced Dental Surgeon specializing in oral surgery,
-                  cosmetic, and restorative dentistry with 16+ years' expertise
-                  and advanced laser training.
-                </p>
-              </div>
-            </div>
-          </div>
+      <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+        BDS (DU), MPH (SUB) <br />
+        PGT in Oral & Maxillofacial Surgery (BMU) <br />
+        Advanced Training in Oral Implant (ICTTTRB)(Malaysia) <br />
+        Special Training in Laser Dentistry (Thailand) <br />
+        Oral & Dental Surgeon
+      </p>
+
+      <p className="mt-4 font-semibold text-[#1f2d3d]">
+        Chamber:
+      </p>
+      <p className="text-sm md:text-base text-gray-700">
+        Japan Bangladesh Friendship Hospital, Dental Unit <br />
+        Zigatola Road, House No. 48/76
+      </p>
+    </div>
+  </div>
+
+</div>
         </motion.div>
+      <motion.div
+  initial={{ opacity: 0, scale: 0 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5, delay: 0.6 }}
+  className="flex flex-col items-center text-center"
+>
+  <div className="justify-center flex flex-col md:flex-row gap-4 bg-gradient-to-r from-blue-100 via-teal-100 to-blue-100">
+
+    <div className="md:w-1/2 relative group">
+      <img
+        src={Mahim}
+        alt="Mahim"
+        className="w-full h-[380px] md:h-[380px] object-cover bg-gray-300 rounded-md"
+      />
+      <div className="absolute inset-0 bg-teal-400/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="text-center">
+          <p className="text-white text-lg md:text-2xl font-bold">
+            Dr. Mahin Sarwar
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="md:w-1/2 flex items-center justify-center text-start px-5">
+      <div>
+        <p className="text-lg font-bold text-[#1f2d3d] py-3">
+          Dr. Mahin Sarwar
+        </p>
+
+        <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+          BDS (DU), MPH (SUB) <br />
+          PGT in Oral & Maxillofacial Surgery (BMU) <br />
+          Advanced Training in Oral Implant (ICTTTRB)(Malaysia) <br />
+          Special Training in Laser Dentistry (Thailand) <br />
+          Oral & Dental Surgeon
+        </p>
+
+        <p className="mt-4 font-semibold text-[#1f2d3d]">
+          Chamber:
+        </p>
+
+        <p className="text-sm md:text-base text-gray-700">
+          Japan Bangladesh Friendship Hospital, Dental Unit <br />
+          Zigatola Road, House No. 48/76
+        </p>
+      </div>
+    </div>
+
+  </div>
+</motion.div>
       </div>
       {/* <motion.div
         variants={SlideUp(0.5)}

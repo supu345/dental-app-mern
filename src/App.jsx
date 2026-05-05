@@ -29,9 +29,9 @@ function App() {
   };
   return (
     <div>
-      <div className="">
+      {/* <div className="">
         <NotificationDialog isVisible={isDialogVisible} onClose={handleClose} />
-      </div>
+      </div> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />

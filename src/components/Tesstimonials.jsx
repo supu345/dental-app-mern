@@ -7,6 +7,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import Fahim from "../assets/fahim.jpg";
 import Foyzun from "../assets/Foyzun.png";
 import Adilah from "../assets/adlilah.jpg";
+import Adilah1 from "../assets/pt3.jpeg";
 import { motion } from "framer-motion";
 import { SlideUp } from "../utility/animation";
 import { SlideLeft } from "../utility/animation";
@@ -67,12 +68,12 @@ const Tesstimonials = () => {
           variants={SlideRight(0.4)}
           initial="hidden"
           whileInView="visible"
-          className="md:w-[500px]"
+          className="md:w-[450px] mt-12"
         >
           <img
-            src="https://images.pexels.com/photos/6627291/pexels-photo-6627291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src={Adilah1}
             alt="photo"
-            className="rounded-2xl h-[300px] lg:h-[400px] w-full lg:w-[500px] md:w-[500px] mx-auto lg:mx-0 mt-6 lg:mt-12 object-cover transition duration-700  ease-in-out hover:scale-105"
+            className="rounded-2xl lg:h-[350px]   lg:w-[500px] md:w-[500px]  mx-auto lg:mx-0 mt-6 lg:mt-12 object-cover transition duration-700  ease-in-out hover:scale-105"
           />
         </motion.div>
 
@@ -84,7 +85,7 @@ const Tesstimonials = () => {
         >
           <div id="testimonials" className="py-10 bg-white relative">
             <p className="text-2xl lg:text-3xl font-bold text-center lg:text-left ml-0 lg:ml-7">
-              Amazing Review from Customers
+              Amazing Review from Patients
             </p>
             <div className="max-w-full lg:max-w-6xl mx-auto py-10 px-4">
               <Swiper

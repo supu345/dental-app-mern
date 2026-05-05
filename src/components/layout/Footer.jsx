@@ -33,7 +33,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-500/50 to-green-500/50 overflow-hidden ">
+    <div className="bg-blue-300 overflow-hidden ">
       <motion.div
         variants={SlideUp(0.5)}
         initial="hidden"

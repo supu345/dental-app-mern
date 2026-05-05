@@ -122,7 +122,7 @@ const Navbar = ({ handleOrderPopup, nav }) => {
               <div className="flex flex-row gap-4 items-center">
                 <div className="flex flex-row gap-4 items-center">
                   <FaPhoneAlt />
-                  <p>01615523438</p>
+                  <p>01999551616/01999441515</p>
                 </div>
                 <div className="flex flex-row gap-4 items-center">
                   <MdEmail />

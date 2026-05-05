@@ -4,6 +4,7 @@ import { SlideUp } from "../utility/animation";
 import Layout from "../components/layout/Layout";
 import Shamima from "../assets/drShamima1.png";
 import Mahim from "../assets/drMahim.png";
+
 import { BsStars } from "react-icons/bs";
 import { TbDental } from "react-icons/tb";
 import Service from "../components/Service";
