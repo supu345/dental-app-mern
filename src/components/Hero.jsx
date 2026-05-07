@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-
 import Banner2 from "../assets/chamber123.jpeg";
 import Banner3 from "../assets/banner2.png";
 import Banner4 from "../assets/banner4.png";
 import Banner8 from "../assets/laser1.jpg";
 import Banner9 from "../assets/pt2.jpeg";
 import Banner10 from "../assets/mahimpt1.jpeg";
+import Banner11 from "../assets/rakib1.jpeg";
 const Hero = () => {
   const slides = [
     // {
@@ -42,7 +42,7 @@ const Hero = () => {
     // },
     {
       id: 5,
-      image: Banner2,
+      image: Banner11,
       title: "How Diet Impacts Your Dental Health",
       description:
         "Learn how the foods you eat influence your teeth and gums, including which nutrients support oral health and which foods to avoid for a cavity-free smile.",
@@ -57,7 +57,7 @@ const Hero = () => {
     {
       id: 7,
 
-      image: Banner10,
+      image: Banner8,
       title: "Pediatric Dentistry: Caring for Your Child’s Smile",
       description:
         "Find out how to ensure your child’s teeth grow healthy and strong with age-appropriate dental care, tips for preventing cavities, and advice on their first dental visit.",

@@ -4,6 +4,7 @@ import chamber1 from "../assets/chamber-11.png";
 import chamber2 from "../assets/chamber-12.png";
 import chamber3 from "../assets/chamber-22.png";
 import Mahimpt from "../assets/pt1.jpeg";
+import Shamima1 from "../assets/Shamima1-removebg.png";
 import Testimonial from "../components/Testimonial";
 import { LayoutGroup, motion } from "framer-motion";
 import { SlideUp } from "../utility/animation";
@@ -44,18 +45,18 @@ const HomePage = () => {
         "Call us today to book your appointment at a time that works best for you. 01999 44 1515, 01999 55 1616",
       icon: <CiCalendarDate />,
     },
-    {
-      question: "What conditions can manual therapy treat?",
-      answer:
-        "Manual therapy can treat joint pain, muscle tension, back pain, neck pain, and mobility issues.",
-      icon: <FaHandHoldingMedical />,
-    },
-    {
-      question: "Expert Care",
-      answer:
-        "Receive high-quality treatment from skilled professionals dedicated to your comfort and recovery.",
-      icon: <PiHospitalFill />,
-    },
+    // {
+    //   question: "What conditions can manual therapy treat?",
+    //   answer:
+    //     "Manual therapy can treat joint pain, muscle tension, back pain, neck pain, and mobility issues.",
+    //   icon: <FaHandHoldingMedical />,
+    // },
+    // {
+    //   question: "Expert Care",
+    //   answer:
+    //     "Receive high-quality treatment from skilled professionals dedicated to your comfort and recovery.",
+    //   icon: <PiHospitalFill />,
+    // },
    
   ];
 

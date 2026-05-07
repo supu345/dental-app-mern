@@ -56,10 +56,10 @@ const Layout = (props) => {
       >
         {/* <FaWhatsapp size={22} /> */}
   <Link
-              to="https://web.whatsapp.com/send?phone=+wa.me/8801730702545"
+              to="https://web.whatsapp.com/send?phone=+wa.me/8801714083145"
               target="_blank"
               rel="noopener nofollow"
-              data-url="https://web.whatsapp.com/send?phone=wa.me/8801730702545"
+              data-url="https://web.whatsapp.com/send?phone=wa.me/8801714083145"
               data-tab-setting="hover"
               data-mobile-behavior="disable"
               data-flyout="disable"
