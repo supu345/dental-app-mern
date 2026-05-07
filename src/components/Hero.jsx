@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import Banner2 from "../assets/banner1.png";
+import Banner2 from "../assets/chamber123.jpeg";
 import Banner3 from "../assets/banner2.png";
 import Banner4 from "../assets/banner4.png";
 import Banner8 from "../assets/laser1.jpg";
 import Banner9 from "../assets/pt2.jpeg";
+import Banner10 from "../assets/mahimpt1.jpeg";
 const Hero = () => {
   const slides = [
     // {
@@ -56,7 +57,7 @@ const Hero = () => {
     {
       id: 7,
 
-      image: Banner3,
+      image: Banner10,
       title: "Pediatric Dentistry: Caring for Your Child’s Smile",
       description:
         "Find out how to ensure your child’s teeth grow healthy and strong with age-appropriate dental care, tips for preventing cavities, and advice on their first dental visit.",
@@ -64,7 +65,7 @@ const Hero = () => {
     {
       id: 8,
 
-      image: Banner8,
+      image: Banner4,
       title: "Pediatric Dentistry: Caring for Your Child’s Smile",
       description:
         "Find out how to ensure your child’s teeth grow healthy and strong with age-appropriate dental care, tips for preventing cavities, and advice on their first dental visit.",

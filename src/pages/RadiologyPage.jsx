@@ -4,6 +4,7 @@ import Dental from "../assets/dental5.jpg";
 import Ortho from "../assets/orthodontic.png";
 import Ortho1 from "../assets/orthodontic1.jpg";
 import Ortho2 from "../assets/orthodontic2.jpg";
+import Mahimpt2 from "../assets/mahimpt2.jpeg";
 import { motion } from "framer-motion";
 import { SlideUp } from "../utility/animation";
 import { GoDotFill } from "react-icons/go";
@@ -116,9 +117,9 @@ const RadiologyPage = () => {
 
             <div className="md:w-1/2">
               <img
-                src="https://images.pexels.com/photos/3845735/pexels-photo-3845735.jpeg"
+                src={Mahimpt2}
                 alt="Dental X-ray"
-                className="rounded-2xl mt-5 h-[400px] w-[600px] object-cover"
+                className="rounded-2xl mt-5 h-[450px] w-[600px] object-cover"
               />
             </div>
           </div>

@@ -9,6 +9,8 @@ import Banner1 from "../assets/banner-dental.jpg";
 import Banner2 from "../assets/banner1.png";
 import Banner3 from "../assets/banner2.png";
 import Banner4 from "../assets/banner4.png";
+import Chamber123 from "../assets/chamber123.jpeg";
+
 const Slider = () => {
   return (
     <div>
@@ -45,7 +47,7 @@ const Slider = () => {
           <SwiperSlide>
             <div className="relative h-full w-full flex flex-col  items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img
-                src={Banner2}
+                src={Chamber123}
                 alt="Nature 1"
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
               />
@@ -66,7 +68,7 @@ const Slider = () => {
           <SwiperSlide>
             <div className="relative h-full w-full flex flex-col  items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img
-                src={Banner3}
+                src={Chamber123}
                 alt="Nature 1"
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
               />
@@ -86,7 +88,7 @@ const Slider = () => {
           <SwiperSlide>
             <div className="relative h-full w-full flex flex-col  items-start pl-[100px] justify-center p-4 bg-gray-900 bg-opacity-50">
               <img
-                src={Banner4}
+                src={Chamber123}
                 alt="Nature 1"
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
               />

@@ -90,14 +90,15 @@ const HomePage = () => {
             </div>
             <div className="text-justify">
               <p className="mt-4 text-sm w-[400px] md:w-[480px] ">
-                Every smile has a story — and we’re here to make yours
-                unforgettable. At the heart of our care is a commitment to your
-                health, comfort, and confidence. Through personalized dental
-                solutions, we help you smile brighter, live healthier, and feel
-                your very best, one smile at a time.
+                Welcome to our advanced dental practice, where cutting-edge technology, precision, and compassionate care come together to deliver exceptional dental treatment. Our practice is equipped with modern digital systems and advanced laser dentistry solutions, allowing us to provide minimally invasive, comfortable, and highly effective procedures with greater accuracy and faster healing times.
               </p>
             </div>
-            <div className="flex flex-row gap-2 mt-5">
+            <div className="text-justify">
+              <p className="mt-4 text-sm w-[400px] md:w-[480px] ">
+              From preventive and cosmetic dentistry to advanced restorative, surgical, and laser-assisted treatments, our experienced dental team is committed to offering personalized care tailored to every patient’s needs. We focus on creating a relaxing and patient-centered environment where innovation meets comfort, ensuring healthier smiles, improved confidence, and outstanding long-term oral health outcomes.
+              </p>
+            </div>
+            {/* <div className="flex flex-row gap-2 mt-8">
               <img
                 src={Mahimpt}
                 alt="dental1"
@@ -121,7 +122,7 @@ const HomePage = () => {
                   <p>Raising the Standard in Healthcare</p>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* <div className="flex flex-row w-[200px] mt-6 item-center  gap-2 bg-black rounded-full text-white p-2 pr-4">
               <TbDental className="bg-[#15B392] font-bold rounded-full p-1 text-3xl" />
               <p> read more </p>
@@ -138,15 +139,15 @@ const HomePage = () => {
               <img
                 src={Mahimpt}
                 alt="photo"
-                className="w-full md:w-[500px] h-[330px] md:h-[350px] object-cover  rounded-4xl "
+                className="w-full md:w-[500px] h-[330px] md:h-[350px] object-cover  rounded-4xl  "
               />
               {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
               {/* Smaller image positioned over the larger one */}
               <img
-                src={chamber2}
-                alt="photo"
-                className="absolute w-[200px]  h-[300px] sm:w-[200px] sm:h-[160px]  md:w-[300px] md:h-[250px] object-cover top-12  sm:top-16 md:top-50 sm:left-8 md:-left-20  md:right-80 border-[5px] md:border-[10px]  sm:border-[6px] border-white shadow-lg  rounded-4xl"
-              />
+  src={chamber2}
+  alt="photo"
+  className="absolute w-[200px] h-[300px] sm:w-[200px] sm:h-[160px] md:w-[300px] md:h-[250px] object-cover top-6 sm:top-10 md:top-40 sm:left-8 md:-left-20 md:right-80 border-[5px] md:border-[10px] sm:border-[6px] border-white shadow-lg rounded-4xl"
+/>
             </motion.div>
           </div>
         </motion.div>
